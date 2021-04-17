@@ -26,16 +26,17 @@ docker-compose build && docker-compose up -d
 
 ## Test it 
 
-http://localhost:80/info.php will simply show you a [php_info()](https://www.php.net/manual/en/function.phpinfo.php) dump
-http://localhost:80/index.php will retrieve informations from db
+ - http://localhost:80/info.php will simply show you a [php_info()](https://www.php.net/manual/en/function.phpinfo.php) dump
+ - http://localhost:80/index.php will retrieve informations from db
 
-http://localhost:81/ will serve you a [phpMyAdmin](https://www.phpmyadmin.net/) instance
-http://localhost:81/ will serve you a [Adminer](https://www.adminer.org/) instance (phpMyAdmin alternative)
+ - http://localhost:81/ will serve you a [phpMyAdmin](https://www.phpmyadmin.net/) instance
+ - http://localhost:81/ will serve you a [Adminer](https://www.adminer.org/) instance (phpMyAdmin alternative)
 
 ## Logs
 
-`./logs/httpd/access.log` Access log of Apache
-`./logs/httpd/error.log` Error log of Apache
+ - `./logs/httpd/access.log` Access log of Apache
+ - `./logs/httpd/error.log` Error log of Apache
+
 
 ## Check health
 
