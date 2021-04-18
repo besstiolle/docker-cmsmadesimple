@@ -26,7 +26,7 @@ services:
     #If MYSQL_VERSION > 8.0.0
     #command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
     #If MYSQL_VERSION < 8.0.0
-    #command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     ports:
       - "3306:3306"
     environment:
