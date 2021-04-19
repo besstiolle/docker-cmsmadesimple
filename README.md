@@ -3,19 +3,37 @@ A complete set of Multi Containers to test installations or upgrades of CmsMadeS
 
 ## Configuration
 
+### Default values
+
+The defaults values are setted for the last version of [CmsMadeSimple](https://cmsmadesimple.org)
+
+ - PHP_VERSION=7.0.x (7.0.30 at date)
+ - MYSQL_VERSION=5.5.x (5.5.62 at date)
+ - MYSQL_DATABASE=myDb
+ - MYSQL_USER=user
+ - MYSQL_PASSWORD=test
+ - MYSQL_ROOT_PASSWORD=test
+
+### Env configuration
+
+To customise your environment's values you can rename the file `.env-example` to `.env` and customize its values.
+
+> Be aware that the parameter `MYSQL_DATABASE` is necessary, it used to grant access to your database for your db `MYSQL_USER`
+
+
+### Directories
+
 `./dump/`
 
-Every sql file will be imported
+Every sql file will be imported when you starts your containers
 
 `./www/`
 
 Files will be served by php & Apache
 
-`./docker-compose.yml`
+`./logs/`
 
-change value 2 times if necessary with your own values
- - `MYSQL_USER: user`
- - `MYSQL_PASSWORD: test`
+You'll find log for Apache access & error
 
 
 ## Build & run it
