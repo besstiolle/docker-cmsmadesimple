@@ -15,11 +15,12 @@ services:
       context: .
       dockerfile: php.Dockerfile
       args: 
-        - PHP_VERSION=${PHP_VERSION:-7.0} # eg : 7.0.30-fpm-alpine or better for CmsMadeSimple 2.2.15
+        - PHP_VERSION=${PHP_VERSION:-7.3} # eg : 7.3.27-fpm-alpine or better for CmsMadeSimple 2.2.15
     expose:
       - 9000
     volumes:
       - ./www:/var/www/html
+      - ./logs/php:/var/log/
 
   db:
     image: mysql:${MYSQL_VERSION:-5.5} # eg : 5.5.62 or better for CmsMadeSimple 2.2.15
