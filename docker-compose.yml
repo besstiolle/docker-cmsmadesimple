@@ -1,6 +1,7 @@
 version: "3"
 services:
   httpd:
+    image: cmsms/http:alpha-snapshot
     build:
       context: .
       dockerfile: httpd.Dockerfile
@@ -11,6 +12,7 @@ services:
       - ./logs/httpd:/logs
 
   phpfpm:
+    image: cmsms/php:alpha-snapshot
     build:
       context: .
       dockerfile: php.Dockerfile
