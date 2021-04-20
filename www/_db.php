@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('db', 'www.***REMOVED***', '***REMOVED***', 'www.***REMOVED***', 3306);
+$conn = mysqli_connect('db', 'test', 'test', 'test', 3306);
 mysqli_set_charset($conn, "utf8");
 $query = 'SHOW TABLES';
 $result = mysqli_query($conn, $query);
